@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test'
 
-test('the website is online and the title is correct', async ({ page }) => {
+test('webapp is online and the title is correct', async ({ page }) => {
   await page.goto('http://localhost:5173/')
 
   await expect(page).toHaveTitle(/Velô by Papito/)
